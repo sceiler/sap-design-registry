@@ -343,6 +343,7 @@
       "title": "Accordion",
       "description": "A vertically stacked set of interactive headings that each reveal a section of content.",
       "registryDependencies": [
+        "accordion",
         "https://registry-starter.vercel.app/r/theme.json"
       ],
       "files": [
@@ -372,6 +373,14 @@
       ],
       "files": [
         {
+          "path": "src/components/ui/alert.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        },
+        {
           "path": "src/v0/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
@@ -388,6 +397,14 @@
         "https://registry-starter.vercel.app/r/theme.json"
       ],
       "files": [
+        {
+          "path": "src/components/ui/avatar.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        },
         {
           "path": "src/v0/minimal-layout.tsx",
           "type": "registry:file",
@@ -406,6 +423,14 @@
       ],
       "files": [
         {
+          "path": "src/components/ui/badge.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        },
+        {
           "path": "src/v0/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
@@ -422,6 +447,14 @@
         "https://registry-starter.vercel.app/r/theme.json"
       ],
       "files": [
+        {
+          "path": "src/components/ui/breadcrumb.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        },
         {
           "path": "src/v0/minimal-layout.tsx",
           "type": "registry:file",
@@ -440,6 +473,14 @@
       ],
       "files": [
         {
+          "path": "src/components/ui/button.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        },
+        {
           "path": "src/v0/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
@@ -456,6 +497,14 @@
         "https://registry-starter.vercel.app/r/theme.json"
       ],
       "files": [
+        {
+          "path": "src/components/ui/calendar.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        },
         {
           "path": "src/v0/minimal-layout.tsx",
           "type": "registry:file",
@@ -474,6 +523,14 @@
       ],
       "files": [
         {
+          "path": "src/components/ui/card.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        },
+        {
           "path": "src/v0/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
@@ -490,6 +547,14 @@
         "https://registry-starter.vercel.app/r/theme.json"
       ],
       "files": [
+        {
+          "path": "src/components/ui/chart.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        },
         {
           "path": "src/v0/minimal-layout.tsx",
           "type": "registry:file",
@@ -508,22 +573,13 @@
       ],
       "files": [
         {
-          "path": "src/v0/minimal-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
-        }
-      ]
-    },
-    {
-      "name": "data-table",
-      "type": "registry:ui",
-      "title": "Data Table",
-      "description": "Powerful table and datagrids built using TanStack Table.",
-      "registryDependencies": [
-        "data-table",
-        "https://registry-starter.vercel.app/r/theme.json"
-      ],
-      "files": [
+          "path": "src/components/ui/checkbox.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        },
         {
           "path": "src/v0/minimal-layout.tsx",
           "type": "registry:file",
@@ -559,6 +615,14 @@
       ],
       "files": [
         {
+          "path": "src/components/ui/dialog.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        },
+        {
           "path": "src/v0/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
@@ -575,6 +639,14 @@
         "https://registry-starter.vercel.app/r/theme.json"
       ],
       "files": [
+        {
+          "path": "src/components/ui/dropdown-menu.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        },
         {
           "path": "src/v0/minimal-layout.tsx",
           "type": "registry:file",
@@ -593,6 +665,14 @@
       ],
       "files": [
         {
+          "path": "src/components/ui/input.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        },
+        {
           "path": "src/v0/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
@@ -609,6 +689,14 @@
         "https://registry-starter.vercel.app/r/theme.json"
       ],
       "files": [
+        {
+          "path": "src/components/ui/menubar.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        },
         {
           "path": "src/v0/minimal-layout.tsx",
           "type": "registry:file",
@@ -627,6 +715,14 @@
       ],
       "files": [
         {
+          "path": "src/components/ui/select.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        },
+        {
           "path": "src/v0/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
@@ -643,6 +739,14 @@
         "https://registry-starter.vercel.app/r/theme.json"
       ],
       "files": [
+        {
+          "path": "src/components/ui/separator.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        },
         {
           "path": "src/v0/minimal-layout.tsx",
           "type": "registry:file",
@@ -661,6 +765,14 @@
       ],
       "files": [
         {
+          "path": "src/components/ui/skeleton.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        },
+        {
           "path": "src/v0/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
@@ -677,6 +789,14 @@
         "https://registry-starter.vercel.app/r/theme.json"
       ],
       "files": [
+        {
+          "path": "src/components/ui/slider.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        },
         {
           "path": "src/v0/minimal-layout.tsx",
           "type": "registry:file",
@@ -717,6 +837,14 @@
       ],
       "files": [
         {
+          "path": "src/components/ui/switch.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        },
+        {
           "path": "src/v0/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
@@ -733,6 +861,14 @@
         "https://registry-starter.vercel.app/r/theme.json"
       ],
       "files": [
+        {
+          "path": "src/components/ui/table.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        },
         {
           "path": "src/v0/minimal-layout.tsx",
           "type": "registry:file",
@@ -751,6 +887,14 @@
       ],
       "files": [
         {
+          "path": "src/components/ui/tabs.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        },
+        {
           "path": "src/v0/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
@@ -768,6 +912,14 @@
       ],
       "files": [
         {
+          "path": "src/components/ui/toggle-group.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        },
+        {
           "path": "src/v0/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
@@ -784,6 +936,139 @@
         "https://registry-starter.vercel.app/r/theme.json"
       ],
       "files": [
+        {
+          "path": "src/components/ui/tooltip.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "src/v0/minimal-layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        }
+      ]
+    },
+    {
+      "name": "radio-group",
+      "type": "registry:ui",
+      "title": "Radio Group",
+      "description": "A set of radio buttons allowing a single selection.",
+      "registryDependencies": [
+        "radio-group",
+        "https://registry-starter.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/radio-group.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "src/v0/minimal-layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        }
+      ]
+    },
+    {
+      "name": "progress",
+      "type": "registry:ui",
+      "title": "Progress",
+      "description": "Displays a progress bar indicating completion.",
+      "registryDependencies": [
+        "progress",
+        "https://registry-starter.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/progress.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "src/v0/minimal-layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sheet",
+      "type": "registry:ui",
+      "title": "Sheet",
+      "description": "A sheet component for overlays.",
+      "registryDependencies": [
+        "sheet",
+        "https://registry-starter.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/sheet.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "src/v0/minimal-layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        }
+      ]
+    },
+    {
+      "name": "drawer",
+      "type": "registry:ui",
+      "title": "Drawer",
+      "description": "A drawer component for overlays.",
+      "registryDependencies": [
+        "drawer",
+        "https://registry-starter.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/drawer.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "src/v0/minimal-layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        }
+      ]
+    },
+    {
+      "name": "collapsible",
+      "type": "registry:ui",
+      "title": "Collapsible",
+      "description": "A collapsible component for hiding content.",
+      "registryDependencies": [
+        "collapsible",
+        "https://registry-starter.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/collapsible.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        },
         {
           "path": "src/v0/minimal-layout.tsx",
           "type": "registry:file",

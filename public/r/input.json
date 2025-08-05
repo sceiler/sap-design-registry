@@ -10,6 +10,16 @@
   ],
   "files": [
     {
+      "path": "src/components/ui/input.tsx",
+      "content": "import type * as React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nfunction Input({ className, type, ...props }: React.ComponentProps<\"input\">) {\n  return (\n    <input\n      type={type}\n      data-slot=\"input\"\n      className={cn(\n        \"flex h-9 w-full min-w-0 rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-xs outline-none transition-[color,box-shadow] selection:bg-primary selection:text-primary-foreground file:inline-flex file:h-7 file:border-0 file:bg-transparent file:font-medium file:text-foreground file:text-sm placeholder:text-muted-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm dark:bg-input/30\",\n        \"focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50\",\n        \"aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40\",\n        className,\n      )}\n      {...props}\n    />\n  );\n}\n\nexport { Input };\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "content": "import { type ClassValue, clsx } from \"clsx\";\nimport { twMerge } from \"tailwind-merge\";\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs));\n}\n\nexport function getPrompt(): string {\n  return `These are existing design system styles and files. Please utilize them alongside base components to build. \n\nDO NOT allow users to change the underlying theme and primitives of the design system by default. If a user deliberately asks to change the design system, warn the user and only proceed upon acknowledgement.\n`;\n}\n",
+      "type": "registry:lib"
+    },
+    {
       "path": "src/v0/minimal-layout.tsx",
       "content": "import { Poppins } from \"next/font/google\";\nimport React, { type ReactNode } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport \"@/app/tokens.css\";\nimport \"@/app/globals.css\";\n\nconst PoppinsSans = Poppins({\n  subsets: [\"latin\"],\n  variable: \"--font-sans\",\n  weight: [\"400\", \"500\", \"600\", \"700\"],\n});\n\nexport default function RootLayout({\n  children,\n}: Readonly<{\n  children: ReactNode;\n}>) {\n  return (\n    <html\n      lang=\"en\"\n      className={cn(PoppinsSans.variable, \"bg-background text-foreground\")}\n    >\n      <body>\n        <main className=\"mt-16 flex w-full justify-center\">\n          <div className=\"container\">{children}</div>\n        </main>\n      </body>\n    </html>\n  );\n}\n",
       "type": "registry:file",

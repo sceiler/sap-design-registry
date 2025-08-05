@@ -1,17 +1,17 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "skeleton",
+  "name": "collapsible",
   "type": "registry:ui",
-  "title": "Skeleton",
-  "description": "Use to show a placeholder while content is loading.",
+  "title": "Collapsible",
+  "description": "A collapsible component for hiding content.",
   "registryDependencies": [
-    "skeleton",
+    "collapsible",
     "https://registry-starter.vercel.app/r/theme.json"
   ],
   "files": [
     {
-      "path": "src/components/ui/skeleton.tsx",
-      "content": "import { cn } from \"@/lib/utils\";\n\nfunction Skeleton({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"skeleton\"\n      className={cn(\"animate-pulse rounded-md bg-accent\", className)}\n      {...props}\n    />\n  );\n}\n\nexport { Skeleton };\n",
+      "path": "src/components/ui/collapsible.tsx",
+      "content": "\"use client\";\n\nimport * as CollapsiblePrimitive from \"@radix-ui/react-collapsible\";\n\nfunction Collapsible({\n  ...props\n}: React.ComponentProps<typeof CollapsiblePrimitive.Root>) {\n  return <CollapsiblePrimitive.Root data-slot=\"collapsible\" {...props} />;\n}\n\nfunction CollapsibleTrigger({\n  ...props\n}: React.ComponentProps<typeof CollapsiblePrimitive.CollapsibleTrigger>) {\n  return (\n    <CollapsiblePrimitive.CollapsibleTrigger\n      data-slot=\"collapsible-trigger\"\n      {...props}\n    />\n  );\n}\n\nfunction CollapsibleContent({\n  ...props\n}: React.ComponentProps<typeof CollapsiblePrimitive.CollapsibleContent>) {\n  return (\n    <CollapsiblePrimitive.CollapsibleContent\n      data-slot=\"collapsible-content\"\n      {...props}\n    />\n  );\n}\n\nexport { Collapsible, CollapsibleTrigger, CollapsibleContent };\n",
       "type": "registry:ui"
     },
     {

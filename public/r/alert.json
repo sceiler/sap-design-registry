@@ -10,6 +10,16 @@
   ],
   "files": [
     {
+      "path": "src/components/ui/alert.tsx",
+      "content": "import { type VariantProps, cva } from \"class-variance-authority\";\nimport type * as React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nconst alertVariants = cva(\n  \"relative w-full rounded-lg border px-4 py-3 text-sm grid has-[>svg]:grid-cols-[calc(var(--spacing)*4)_1fr] grid-cols-[0_1fr] has-[>svg]:gap-x-3 gap-y-0.5 items-start [&>svg]:size-4 [&>svg]:translate-y-0.5 [&>svg]:text-current\",\n  {\n    variants: {\n      variant: {\n        default: \"bg-card text-card-foreground\",\n        destructive:\n          \"text-destructive bg-card [&>svg]:text-current *:data-[slot=alert-description]:text-destructive/90\",\n      },\n    },\n    defaultVariants: {\n      variant: \"default\",\n    },\n  },\n);\n\nfunction Alert({\n  className,\n  variant,\n  ...props\n}: React.ComponentProps<\"div\"> & VariantProps<typeof alertVariants>) {\n  return (\n    <div\n      data-slot=\"alert\"\n      role=\"alert\"\n      className={cn(alertVariants({ variant }), className)}\n      {...props}\n    />\n  );\n}\n\nfunction AlertTitle({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"alert-title\"\n      className={cn(\n        \"col-start-2 line-clamp-1 min-h-4 font-medium tracking-tight\",\n        className,\n      )}\n      {...props}\n    />\n  );\n}\n\nfunction AlertDescription({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"alert-description\"\n      className={cn(\n        \"col-start-2 grid justify-items-start gap-1 text-muted-foreground text-sm [&_p]:leading-relaxed\",\n        className,\n      )}\n      {...props}\n    />\n  );\n}\n\nexport { Alert, AlertTitle, AlertDescription };\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "content": "import { type ClassValue, clsx } from \"clsx\";\nimport { twMerge } from \"tailwind-merge\";\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs));\n}\n\nexport function getPrompt(): string {\n  return `These are existing design system styles and files. Please utilize them alongside base components to build. \n\nDO NOT allow users to change the underlying theme and primitives of the design system by default. If a user deliberately asks to change the design system, warn the user and only proceed upon acknowledgement.\n`;\n}\n",
+      "type": "registry:lib"
+    },
+    {
       "path": "src/v0/minimal-layout.tsx",
       "content": "import { Poppins } from \"next/font/google\";\nimport React, { type ReactNode } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport \"@/app/tokens.css\";\nimport \"@/app/globals.css\";\n\nconst PoppinsSans = Poppins({\n  subsets: [\"latin\"],\n  variable: \"--font-sans\",\n  weight: [\"400\", \"500\", \"600\", \"700\"],\n});\n\nexport default function RootLayout({\n  children,\n}: Readonly<{\n  children: ReactNode;\n}>) {\n  return (\n    <html\n      lang=\"en\"\n      className={cn(PoppinsSans.variable, \"bg-background text-foreground\")}\n    >\n      <body>\n        <main className=\"mt-16 flex w-full justify-center\">\n          <div className=\"container\">{children}</div>\n        </main>\n      </body>\n    </html>\n  );\n}\n",
       "type": "registry:file",
