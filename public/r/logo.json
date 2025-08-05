@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "logo",
+  "type": "registry:component",
+  "title": "Brand Logo",
+  "description": "A styled, simple, reusable logo",
+  "registryDependencies": [
+    "https://registry-starter.vercel.app/r/theme.json"
+  ],
+  "files": [
+    {
+      "path": "src/components/logo.tsx",
+      "content": "import Image from \"next/image\";\n\nexport function Logo() {\n  return (\n    <div className=\"flex items-center gap-2 ml-2\">\n      <Image \n        src=\"/SAP_2011_logo.svg\" \n        alt=\"SAP Logo\" \n        width={64} \n        height={32} \n        className=\"h-8 w-auto\"\n      />\n    </div>\n  );\n}\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "src/v0/minimal-layout.tsx",
+      "content": "import { Poppins } from \"next/font/google\";\nimport React, { type ReactNode } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport \"@/app/tokens.css\";\nimport \"@/app/globals.css\";\n\nconst PoppinsSans = Poppins({\n  subsets: [\"latin\"],\n  variable: \"--font-sans\",\n  weight: [\"400\", \"500\", \"600\", \"700\"],\n});\n\nexport default function RootLayout({\n  children,\n}: Readonly<{\n  children: ReactNode;\n}>) {\n  return (\n    <html\n      lang=\"en\"\n      className={cn(PoppinsSans.variable, \"bg-background text-foreground\")}\n    >\n      <body>\n        <main className=\"mt-16 flex w-full justify-center\">\n          <div className=\"container\">{children}</div>\n        </main>\n      </body>\n    </html>\n  );\n}\n",
+      "type": "registry:file",
+      "target": "app/layout.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/blocks/blank-page.tsx",
+      "content": "export default function BlankPage() {\n  return (\n    <div className=\"flex flex-col items-center justify-center gap-4 rounded-md py-96\">\n      <div className=\"text-muted-foreground\">\n        Start prompting to use your component!\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:page",
+      "target": "app/page.tsx"
+    }
+  ]
+}
