@@ -6,7 +6,7 @@
   "description": "A modal dialog that interrupts the user with important content.",
   "registryDependencies": [
     "dialog",
-    "https://registry-starter.vercel.app/r/theme.json"
+    "https://sap-design-registry.vercel.app/r/theme.json"
   ],
   "files": [
     {
@@ -21,7 +21,7 @@
     },
     {
       "path": "src/v0/minimal-layout.tsx",
-      "content": "import { Poppins } from \"next/font/google\";\nimport React, { type ReactNode } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport \"@/app/tokens.css\";\nimport \"@/app/globals.css\";\n\nconst PoppinsSans = Poppins({\n  subsets: [\"latin\"],\n  variable: \"--font-sans\",\n  weight: [\"400\", \"500\", \"600\", \"700\"],\n});\n\nexport default function RootLayout({\n  children,\n}: Readonly<{\n  children: ReactNode;\n}>) {\n  return (\n    <html\n      lang=\"en\"\n      className={cn(PoppinsSans.variable, \"bg-background text-foreground\")}\n    >\n      <body>\n        <main className=\"mt-16 flex w-full justify-center\">\n          <div className=\"container\">{children}</div>\n        </main>\n      </body>\n    </html>\n  );\n}\n",
+      "content": "import { type ReactNode } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport \"@/app/globals.css\";\nimport \"@/app/tokens.css\";\n\nexport default function RootLayout({\n  children,\n}: Readonly<{\n  children: ReactNode;\n}>) {\n  return (\n    <html\n      lang=\"en\"\n      className={cn(\"font-sans bg-background text-foreground\")}\n    >\n      <body>\n        <main className=\"mt-16 flex w-full justify-center\">\n          <div className=\"container\">{children}</div>\n        </main>\n      </body>\n    </html>\n  );\n}\n",
       "type": "registry:file",
       "target": "app/layout.tsx"
     }

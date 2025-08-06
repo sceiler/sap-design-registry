@@ -30,6 +30,7 @@ import { dialog } from "@/app/demo/[name]/ui/dialog";
 import { dropdownMenu } from "@/app/demo/[name]/ui/dropdown-menu";
 import { input } from "@/app/demo/[name]/ui/input";
 import { menuBar } from "@/app/demo/[name]/ui/menu-bar";
+import { messageStrip } from "@/app/demo/[name]/ui/message-strip";
 import { select } from "@/app/demo/[name]/ui/select";
 import { separator } from "@/app/demo/[name]/ui/separator";
 import { skeleton } from "@/app/demo/[name]/ui/skeleton";
@@ -79,6 +80,7 @@ export const demos: { [name: string]: Demo } = {
   "dropdown-menu": dropdownMenu,
   input,
   "menu-bar": menuBar,
+  "message-strip": messageStrip,
   select,
   separator,
   skeleton,
