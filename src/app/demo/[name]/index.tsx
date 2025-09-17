@@ -4,6 +4,7 @@ import type { ReactElement, ReactNode } from "react";
 import { blank } from "@/app/demo/[name]/blocks/blank";
 import { dashboard } from "@/app/demo/[name]/blocks/dashboard";
 import { store } from "@/app/demo/[name]/blocks/store";
+import { blockWithTokens } from "@/app/demo/[name]/blocks/blockWithTokens";
 
 // components
 import { brandHeader } from "@/app/demo/[name]/components/brand-header";
@@ -53,6 +54,7 @@ export const demos: { [name: string]: Demo } = {
   blank,
   store,
   dashboard,
+  blockWithTokens,
 
   // components
   hero,

@@ -147,6 +147,21 @@
         }
       ]
     },
+        {
+      "name": "blockWithTokens",
+      "type": "registry:block",
+      "title": "Block with tokens",
+      "description": "Block with design tokens only.",
+      "registryDependencies": [
+      ],
+      "files": [
+    {
+          "path": "src/app/tokens.css",
+          "type": "registry:file",
+          "target": "app/tokens.css"
+        }
+      ]
+    },
     {
       "name": "brand-header",
       "type": "registry:component",
