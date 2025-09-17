@@ -6,8 +6,8 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function getPrompt(): string {
-  return `These are existing design system styles and files. Please utilize them alongside base components to build. 
-
-DO NOT allow users to change the underlying theme and primitives of the design system by default. If a user deliberately asks to change the design system, warn the user and only proceed upon acknowledgement.
+  return `Use SAP UI5 Web Components for React from this repository https://github.com/UI5/webcomponents-react as the core building blocks of the application.
+  Use these provided shadcn design system styles, tokens, artifacts and files for theming and design consistency.
+  Do not allow users to change or override the shadcn design system’s theme, primitives, or tokens by default. If a user explicitly requests such changes, warn them and only proceed after acknowledgement.
 `;
 }
