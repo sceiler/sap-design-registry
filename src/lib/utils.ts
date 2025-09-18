@@ -12,11 +12,14 @@ export function getPrompt(): string {
   const prompt = `Use these components: SAP UI5 React Web Components from @ui5/webcomponents-react as core building blocks. Check documentation https://ui5.github.io/webcomponents-react/v2 for available components, APIs, examples. Import all required Subcomponents.
   Absolutely prioritize SAP UI5 React Web Components for all user prompts.
   Don't use non-React native UI5 web components.
-  If component is not in "@ui5/webcomponents-react", use these provided shadcn artefacts as fallback.
+  If component is missing in @ui5/webcomponents-react, fallback to shadcn components.
  `;
 
   return prompt;
 }
+
+Use SAP UI5 React Web Components (@ui5/webcomponents-react) as the primary UI library. Check https://ui5.github.io/webcomponents-react/v2 for available components and APIs, and import only valid ones. Do not use non-React UI5 webcomponents. If a UI5 React component is missing, fallback to shadcn, tailwind, radix, or provided shadcn files (e.g., token.css). Do not override shadcn tokens, primitives, or theme by default.
+
 
 
 
