@@ -92,6 +92,15 @@ importers:
       '@tanstack/react-table':
         specifier: ^8.21.3
         version: 8.21.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      '@ui5/webcomponents':
+        specifier: ^2.14.0
+        version: 2.14.0
+      '@ui5/webcomponents-fiori':
+        specifier: ^2.14.0
+        version: 2.14.0
+      '@ui5/webcomponents-react':
+        specifier: ^2.14.1
+        version: 2.14.1(@types/react-dom@19.1.7(@types/react@19.1.9))(@types/react@19.1.9)(@ui5/webcomponents-base@2.14.0)(@ui5/webcomponents-fiori@2.14.0)(@ui5/webcomponents-icons@2.14.0)(@ui5/webcomponents@2.14.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       '@vercel/analytics':
         specifier: ^1.5.0
         version: 1.5.0(next@15.4.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react@19.1.1)
@@ -628,6 +637,9 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.29':
     resolution: {integrity: sha512-uw6guiW/gcAGPDhLmd77/6lW8QLeiV5RUTsAX46Db6oLhGaVj4lhnPwb184s1bkc8kdVg/+h988dro8GRDpmYQ==}
+
+  '@lit-labs/ssr-dom-shim@1.4.0':
+    resolution: {integrity: sha512-ficsEARKnmmW5njugNYKipTm4SFnbik7CXtoencDZzmzo/dQ+2Q0bgkzJuoJP20Aj0F+izzJjOqsnkd6F/o1bw==}
 
   '@next/env@15.4.1':
     resolution: {integrity: sha512-DXQwFGAE2VH+f2TJsKepRXpODPU+scf5fDbKOME8MMyeyswe4XwgRdiiIYmBfkXU+2ssliLYznajTrOQdnLR5A==}
@@ -1395,6 +1407,9 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@sap-theming/theming-base-content@11.29.3':
+    resolution: {integrity: sha512-0LVCUYqoTQGcKmgPShbxQLBoF8469ZojUrYtVm1k3op/1pgLA/FMN//bvgGEm7HTBJBu3gW2Ad2f4ASqEzLolA==}
+
   '@standard-schema/utils@0.3.0':
     resolution: {integrity: sha512-e7Mew686owMaPJVNNLs55PUvgz371nKgwsc4vxE49zsODpJEnxgxRo2y/OKrqueavXgZNMDVj3DdHFlaSAeU8g==}
 
@@ -1571,9 +1586,18 @@ packages:
       react: '>=16.8'
       react-dom: '>=16.8'
 
+  '@tanstack/react-virtual@3.13.12':
+    resolution: {integrity: sha512-Gd13QdxPSukP8ZrkbgS2RwoZseTTbQPLnQEn7HY/rqtM+8Zt95f7xKC7N0EsKs7aoz0WzZ+fditZux+F8EzYxA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+
   '@tanstack/table-core@8.21.3':
     resolution: {integrity: sha512-ldZXEhOBb8Is7xLs01fR3YEc3DERiz5silj8tnGkFZytt1abEvl/GhUmCE0PMLaMPTa3Jk4HbKmRlHmu+gCftg==}
     engines: {node: '>=12'}
+
+  '@tanstack/virtual-core@3.13.12':
+    resolution: {integrity: sha512-1YBOJfRHV4sXUmWsFSf5rQor4Ss82G8dQWLRbnk3GA4jeP8hQt1hxXh0tmflpC0dz3VgEv/1+qwPyLeWkQuPFA==}
 
   '@testing-library/dom@10.4.1':
     resolution: {integrity: sha512-o4PXJQidqJl82ckFaXUeoAW+XysPLauYI43Abki5hABd853iMhitooc6znOnczgbTYmEP6U6/y1ZyKAIsvMKGg==}
@@ -1622,11 +1646,20 @@ packages:
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
 
+  '@types/jquery@3.5.33':
+    resolution: {integrity: sha512-SeyVJXlCZpEki5F0ghuYe+L+PprQta6nRZqhONt9F13dWBtR/ftoaIbdRQ7cis7womE+X2LKhsDdDtkkDhJS6g==}
+
   '@types/jsdom@21.1.7':
     resolution: {integrity: sha512-yOriVnggzrnQ3a9OKOCxaVuSug3w3/SbOj5i7VwXWZEyUNl3bLF9V3MfxGbZKuwqJOQyRfqXyROBB1CoZLFWzA==}
 
   '@types/node@22.17.0':
     resolution: {integrity: sha512-bbAKTCqX5aNVryi7qXVMi+OkB3w/OyblodicMbvE38blyAz7GxXf6XYhklokijuPwwVg9sDLKRxt0ZHXQwZVfQ==}
+
+  '@types/openui5@1.140.0':
+    resolution: {integrity: sha512-z5S2dVRZi4CFnNj4WGAgEcUbg3C3p1HyJvE57/WZBoMLxERS26KBqAF32yWBTSQCmI+E5T4Kk5vbfFfzppBvkQ==}
+
+  '@types/qunit@2.19.13':
+    resolution: {integrity: sha512-N4xp3v4s7f0jb2Oij6+6xw5QhH7/IgHCoGIFLCWtbEWoPkGYp8Te4mIwIP21qaurr6ed5JiPMiy2/ZoiGPkLIw==}
 
   '@types/react-dom@19.1.7':
     resolution: {integrity: sha512-i5ZzwYpqjmrKenzkoLM2Ibzt6mAsM7pxB6BCIouEVVmgiqaMj1TjaK7hnA36hbW5aZv20kx7Lw6hWzPWg0Rurw==}
@@ -1636,8 +1669,73 @@ packages:
   '@types/react@19.1.9':
     resolution: {integrity: sha512-WmdoynAX8Stew/36uTSVMcLJJ1KRh6L3IZRx1PZ7qJtBqT3dYTgyDTx8H1qoRghErydW7xw9mSJ3wS//tCRpFA==}
 
+  '@types/sizzle@2.3.10':
+    resolution: {integrity: sha512-TC0dmN0K8YcWEAEfiPi5gJP14eJe30TTGjkvek3iM/1NdHHsdCA/Td6GvNndMOo/iSnIsZ4HuuhrYPDAmbxzww==}
+
   '@types/tough-cookie@4.0.5':
     resolution: {integrity: sha512-/Ad8+nIOV7Rl++6f1BdKxFSMgmoqEoYbHRpPcx3JEfv8VRsQe9Z4mCXeJBzxs7mbHY/XOZZuXlRNfhpVPbs6ZA==}
+
+  '@types/trusted-types@2.0.7':
+    resolution: {integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==}
+
+  '@ui5/webcomponents-base@2.14.0':
+    resolution: {integrity: sha512-fu5+YjNFDcie2IiluYnp0nlkyluaN3JA997+zcwgXZFUU+2Vqm6eOpeTuXJBepVNcgMKo2uz0cdC1+rsL3gciQ==}
+
+  '@ui5/webcomponents-fiori@2.14.0':
+    resolution: {integrity: sha512-LXwmPmcNlxGN0WZKz5shfVltnb4dPoYYFAxxjFj+3UG2WJ+NB09dME8MMChy5Dq9jdqmXgF3wWRvXLzzVSgdIg==}
+
+  '@ui5/webcomponents-icons-business-suite@2.14.0':
+    resolution: {integrity: sha512-Kl9R4c3B5LELZhejZ/ZaPbV372VjVKNCt4q8kSBih0i3Ekp6k6oM1dVcTIJd3ttJ5r0iDFBR1wgtxn5RNDrygg==}
+
+  '@ui5/webcomponents-icons-tnt@2.14.0':
+    resolution: {integrity: sha512-8nslq04M9pS7ZRI9hVO9VhJWuX/hlIMXKevH0X3Cgw8suzy6yib6n552XvltSM11XMpAmReVjUeTa1n5OgbblQ==}
+
+  '@ui5/webcomponents-icons@2.14.0':
+    resolution: {integrity: sha512-pGFhJjGxkLYpFo52nRWu/DC24Y6yg9XJ06rBw999TW6WTE0Ay1dcBnhp/Nfi8KEgDdY3oBlxQlWXcLxjrf5t1Q==}
+
+  '@ui5/webcomponents-localization@2.14.0':
+    resolution: {integrity: sha512-XyYvsJF13p5wE+VTkVucJKe5vvTFfbdSOQi4CBzlhcrtCHZHq0CY3nq8eLzSd3buDHN6XOvWTny1VRmcz5I3rA==}
+
+  '@ui5/webcomponents-react-base@2.14.1':
+    resolution: {integrity: sha512-dbixXiOkc1iIjh3TKdGxfCL3+wZH6viONydIOYPj86f4Tj+Cj7RlH8gXoXeJJDXHFVrxYiPGSKNCljxP8sIIQA==}
+    peerDependencies:
+      '@types/react': '*'
+      '@ui5/webcomponents-base': ~2.14.0
+      react: ^18 || ^19
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@ui5/webcomponents-base':
+        optional: true
+
+  '@ui5/webcomponents-react@2.14.1':
+    resolution: {integrity: sha512-PCqnF+n96hgvPK3VCCFDHZh7GzNKEXHnot1i++1UTpwq6DcuOtL4MeQ0VrHkI/xIlD0KY1FdD/tbgllZm9SSVw==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      '@ui5/webcomponents': ~2.14.0
+      '@ui5/webcomponents-base': ~2.14.0
+      '@ui5/webcomponents-fiori': ~2.14.0
+      '@ui5/webcomponents-icons': ~2.14.0
+      react: ^18 || ^19
+      react-dom: ^18 || ^19
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+      '@ui5/webcomponents-base':
+        optional: true
+      '@ui5/webcomponents-fiori':
+        optional: true
+      '@ui5/webcomponents-icons':
+        optional: true
+
+  '@ui5/webcomponents-theming@2.14.0':
+    resolution: {integrity: sha512-L+CHet/jA8yYlPjr5lBZDZGzZeuytHJFC+yt4n6POdVRpXSpctcJIoFXUX3PJrH5s/Uc6dYKvQKMf1Toxw3HPw==}
+
+  '@ui5/webcomponents@2.14.0':
+    resolution: {integrity: sha512-ZOJSXPChGMe9R/3ZqzCx1qhyHEazpWofBI+StJe316YcnnynJSJ0a0zuoTKrNac+6DoxwRq3SD3kK1W5TbbNZw==}
 
   '@vercel/analytics@1.5.0':
     resolution: {integrity: sha512-MYsBzfPki4gthY5HnYN7jgInhAZ7Ac1cYDoRWFomwGHWEX7odTEzbtg9kf/QSo7XEsEAqlQugA6gJ2WS2DEa3g==}
@@ -1692,6 +1790,13 @@ packages:
     resolution: {integrity: sha512-YTJCGFdNMHCMfjODYtxRNVAYmTWQ1Lb8PulP/2/f/oEEtglw8oKxKIZmmRkyXrVrHfsKOaVkAc3NT9/dMutO5w==}
     peerDependencies:
       vite: ^4 || ^5 || ^6 || ^7
+
+  '@zxing/library@0.21.3':
+    resolution: {integrity: sha512-hZHqFe2JyH/ZxviJZosZjV+2s6EDSY0O24R+FQmlWZBZXP9IqMo7S3nb3+2LBWxodJQkSurdQGnqE7KXqrYgow==}
+    engines: {node: '>= 10.4.0'}
+
+  '@zxing/text-encoding@0.9.0':
+    resolution: {integrity: sha512-U/4aVJ2mxI0aDNI8Uq0wEhMgY+u4CNtEb0om3+y3+niDAsoTCOB33UF0sxpzqzdqXLqmvc+vZyAt4O8pPdfkwA==}
 
   agent-base@7.1.4:
     resolution: {integrity: sha512-MnA+YT8fwfJPgBx3m60MNqakm30XOkyIoH1y6huTQvC0PwZG7ki8NacLBcrPbNoo8vEZy7Jpuk7+jMO+CUovTQ==}
@@ -2084,6 +2189,9 @@ packages:
     resolution: {integrity: sha512-xi6IyHML+c9+Q3W0S4fCQJOym42pyurFiJUHEcEyHS0CeKzia4yZDEsLlqOFykxOdHpNy0NmvVO31vcSqAxJCg==}
     engines: {node: '>= 12.0.0'}
 
+  lit-html@2.8.0:
+    resolution: {integrity: sha512-o9t+MQM3P4y7M7yNzqAyjp7z+mQGa4NS4CxiyLqFPyFWyc4O+nodLrkrxSaCTrla6M5YOLaT3RpbbqjszB5g3Q==}
+
   lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
 
@@ -2274,6 +2382,11 @@ packages:
       '@types/react':
         optional: true
 
+  react-table@7.8.0:
+    resolution: {integrity: sha512-hNaz4ygkZO4bESeFfnfOft73iBUj8K5oKi1EcSHPAibEydfsX2MyU6Z8KCr3mv3C9Kqqh71U+DhZkFvibbnPbA==}
+    peerDependencies:
+      react: ^16.8.3 || ^17.0.0-0 || ^18.0.0
+
   react-transition-group@4.4.5:
     resolution: {integrity: sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g==}
     peerDependencies:
@@ -2396,6 +2509,10 @@ packages:
   tr46@5.1.1:
     resolution: {integrity: sha512-hdF5ZgjTqgAntKkklYw0R03MG2x/bSzTtkxmIRw/sTNV8YXsCJ1tfLAX23lhxhHJlEf3CRCOCGGWw3vI3GaSPw==}
     engines: {node: '>=18'}
+
+  ts-custom-error@3.3.1:
+    resolution: {integrity: sha512-5OX1tzOjxWEgsr/YEUWSuPrQ00deKLh6D7OTWcvNHm12/7QPyRh8SYpyWvA4IZv8H/+GQWQEh/kwo95Q9OVW1A==}
+    engines: {node: '>=14.0.0'}
 
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
@@ -2823,6 +2940,8 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.4
+
+  '@lit-labs/ssr-dom-shim@1.4.0': {}
 
   '@next/env@15.4.1': {}
 
@@ -3565,6 +3684,8 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.46.2':
     optional: true
 
+  '@sap-theming/theming-base-content@11.29.3': {}
+
   '@standard-schema/utils@0.3.0': {}
 
   '@swc/core-darwin-arm64@1.13.3':
@@ -3701,7 +3822,15 @@ snapshots:
       react: 19.1.1
       react-dom: 19.1.1(react@19.1.1)
 
+  '@tanstack/react-virtual@3.13.12(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
+    dependencies:
+      '@tanstack/virtual-core': 3.13.12
+      react: 19.1.1
+      react-dom: 19.1.1(react@19.1.1)
+
   '@tanstack/table-core@8.21.3': {}
+
+  '@tanstack/virtual-core@3.13.12': {}
 
   '@testing-library/dom@10.4.1':
     dependencies:
@@ -3756,6 +3885,10 @@ snapshots:
 
   '@types/estree@1.0.8': {}
 
+  '@types/jquery@3.5.33':
+    dependencies:
+      '@types/sizzle': 2.3.10
+
   '@types/jsdom@21.1.7':
     dependencies:
       '@types/node': 22.17.0
@@ -3766,6 +3899,13 @@ snapshots:
     dependencies:
       undici-types: 6.21.0
 
+  '@types/openui5@1.140.0':
+    dependencies:
+      '@types/jquery': 3.5.33
+      '@types/qunit': 2.19.13
+
+  '@types/qunit@2.19.13': {}
+
   '@types/react-dom@19.1.7(@types/react@19.1.9)':
     dependencies:
       '@types/react': 19.1.9
@@ -3774,7 +3914,78 @@ snapshots:
     dependencies:
       csstype: 3.1.3
 
+  '@types/sizzle@2.3.10': {}
+
   '@types/tough-cookie@4.0.5': {}
+
+  '@types/trusted-types@2.0.7': {}
+
+  '@ui5/webcomponents-base@2.14.0':
+    dependencies:
+      '@lit-labs/ssr-dom-shim': 1.4.0
+      lit-html: 2.8.0
+
+  '@ui5/webcomponents-fiori@2.14.0':
+    dependencies:
+      '@ui5/webcomponents': 2.14.0
+      '@ui5/webcomponents-base': 2.14.0
+      '@ui5/webcomponents-icons': 2.14.0
+      '@ui5/webcomponents-theming': 2.14.0
+      '@zxing/library': 0.21.3
+
+  '@ui5/webcomponents-icons-business-suite@2.14.0':
+    dependencies:
+      '@ui5/webcomponents-base': 2.14.0
+
+  '@ui5/webcomponents-icons-tnt@2.14.0':
+    dependencies:
+      '@ui5/webcomponents-base': 2.14.0
+
+  '@ui5/webcomponents-icons@2.14.0':
+    dependencies:
+      '@ui5/webcomponents-base': 2.14.0
+
+  '@ui5/webcomponents-localization@2.14.0':
+    dependencies:
+      '@types/openui5': 1.140.0
+      '@ui5/webcomponents-base': 2.14.0
+
+  '@ui5/webcomponents-react-base@2.14.1(@types/react@19.1.9)(@ui5/webcomponents-base@2.14.0)(react@19.1.1)':
+    dependencies:
+      react: 19.1.1
+    optionalDependencies:
+      '@types/react': 19.1.9
+      '@ui5/webcomponents-base': 2.14.0
+
+  '@ui5/webcomponents-react@2.14.1(@types/react-dom@19.1.7(@types/react@19.1.9))(@types/react@19.1.9)(@ui5/webcomponents-base@2.14.0)(@ui5/webcomponents-fiori@2.14.0)(@ui5/webcomponents-icons@2.14.0)(@ui5/webcomponents@2.14.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
+    dependencies:
+      '@tanstack/react-virtual': 3.13.12(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      '@ui5/webcomponents': 2.14.0
+      '@ui5/webcomponents-react-base': 2.14.1(@types/react@19.1.9)(@ui5/webcomponents-base@2.14.0)(react@19.1.1)
+      clsx: 2.1.1
+      react: 19.1.1
+      react-dom: 19.1.1(react@19.1.1)
+      react-table: 7.8.0(react@19.1.1)
+    optionalDependencies:
+      '@types/react': 19.1.9
+      '@types/react-dom': 19.1.7(@types/react@19.1.9)
+      '@ui5/webcomponents-base': 2.14.0
+      '@ui5/webcomponents-fiori': 2.14.0
+      '@ui5/webcomponents-icons': 2.14.0
+
+  '@ui5/webcomponents-theming@2.14.0':
+    dependencies:
+      '@sap-theming/theming-base-content': 11.29.3
+      '@ui5/webcomponents-base': 2.14.0
+
+  '@ui5/webcomponents@2.14.0':
+    dependencies:
+      '@ui5/webcomponents-base': 2.14.0
+      '@ui5/webcomponents-icons': 2.14.0
+      '@ui5/webcomponents-icons-business-suite': 2.14.0
+      '@ui5/webcomponents-icons-tnt': 2.14.0
+      '@ui5/webcomponents-localization': 2.14.0
+      '@ui5/webcomponents-theming': 2.14.0
 
   '@vercel/analytics@1.5.0(next@15.4.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react@19.1.1)':
     optionalDependencies:
@@ -3793,6 +4004,15 @@ snapshots:
       vite: 7.0.6(@types/node@22.17.0)(jiti@2.5.1)(lightningcss@1.30.1)
     transitivePeerDependencies:
       - '@swc/helpers'
+
+  '@zxing/library@0.21.3':
+    dependencies:
+      ts-custom-error: 3.3.1
+    optionalDependencies:
+      '@zxing/text-encoding': 0.9.0
+
+  '@zxing/text-encoding@0.9.0':
+    optional: true
 
   agent-base@7.1.4: {}
 
@@ -4181,6 +4401,10 @@ snapshots:
       lightningcss-win32-arm64-msvc: 1.30.1
       lightningcss-win32-x64-msvc: 1.30.1
 
+  lit-html@2.8.0:
+    dependencies:
+      '@types/trusted-types': 2.0.7
+
   lodash@4.17.21: {}
 
   loose-envify@1.4.0:
@@ -4347,6 +4571,10 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.1.9
 
+  react-table@7.8.0(react@19.1.1):
+    dependencies:
+      react: 19.1.1
+
   react-transition-group@4.4.5(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
     dependencies:
       '@babel/runtime': 7.28.2
@@ -4509,6 +4737,8 @@ snapshots:
   tr46@5.1.1:
     dependencies:
       punycode: 2.3.1
+
+  ts-custom-error@3.3.1: {}
 
   tslib@2.8.1: {}
 
