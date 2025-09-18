@@ -214,3 +214,23 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.h-13 {
+  height: calc(var(--spacing) * 13);
+}
+
+.shellbar {
+  box-shadow: inset 0 -.0625rem 0 0 var(--sapPageHeader_BorderColor);
+}
+
+.input {
+  box-shadow: var(--sapField_Shadow);
+  background-image: linear-gradient(0deg, rgb(85, 107, 129), rgb(85, 107, 129));
+  /* background-color: var(--_ui5-v2-14-0_input_background_color); */
+  /* background-color: #fff; */
+  background-origin: border-box;
+  background-position-x: 0px;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+}
