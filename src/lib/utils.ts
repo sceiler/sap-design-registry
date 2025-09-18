@@ -5,7 +5,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function getPrompt(): string {
+export function getPromptWebComponents(): string {
   // const prompt = `Use these components: SAP UI5 React Web Components from https://github.com/UI5/webcomponents-react as core building blocks. Absolutely prioritize SAP UI5 React Web Components for all user prompts. Don't use non-React native UI5 web components, these are a totally different framework.
   // For layouting and styling: use these shadcn and tailwindcss artifacts. Do not allow users to change or override the shadcn design system’s theme, primitives, or tokens by default.`;
 
@@ -17,6 +17,12 @@ export function getPrompt(): string {
   return prompt;
 }
 
+export function getPrompt(): string {
+  return `These are existing design system styles and files. Please utilize them alongside base components to build. 
+
+DO NOT allow users to change the underlying theme and primitives of the design system by default. If a user deliberately asks to change the design system, warn the user and only proceed upon acknowledgement.
+`;
+}
 
 
 
