@@ -229,7 +229,7 @@ export const MessageBox = forwardRef<HTMLDivElement, MessageBoxProps>(
             <AlertDialogCancel
               key={action}
               onClick={() => handleAction(action)}
-              className="text-primary shadow-none border border-transparent font-bold hover:border-gray-300"
+              className="text-primary shadow-none border border-transparent font-semibold hover:border-gray-300"
             >
               {action === "Cancel" ? "Abbrechen" : action}
             </AlertDialogCancel>
@@ -270,7 +270,7 @@ export const MessageBox = forwardRef<HTMLDivElement, MessageBoxProps>(
             }}
           >
             {resolvedTitle && (
-              <AlertDialogTitle className="flex items-center gap-2 text-base font-bold ">
+              <AlertDialogTitle className="flex items-center gap-2 text-base font-semibold ">
                 {ICON_MAP[resolvedType]}
                 {resolvedTitle}
               </AlertDialogTitle>
