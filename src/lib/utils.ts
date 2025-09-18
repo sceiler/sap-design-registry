@@ -6,9 +6,13 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function getPrompt(): string {
-  const prompt = `Use these components: SAP UI5 React Web Components from https://github.com/UI5/webcomponents-react as core building blocks. Absolutely prioritize SAP UI5 React Web Components for all user prompts. Don't use non-React native UI5 web components, these are a totally different framework.
-  For layouting and styling: use these shadcn and tailwindcss artifacts. Do not allow users to change or override the shadcn design system’s theme, primitives, or tokens by default.`;
+  // const prompt = `Use these components: SAP UI5 React Web Components from https://github.com/UI5/webcomponents-react as core building blocks. Absolutely prioritize SAP UI5 React Web Components for all user prompts. Don't use non-React native UI5 web components, these are a totally different framework.
+  // For layouting and styling: use these shadcn and tailwindcss artifacts. Do not allow users to change or override the shadcn design system’s theme, primitives, or tokens by default.`;
+
+  const prompt = `Use these components: SAP UI5 React Web Components from https://github.com/UI5/webcomponents-react as core building blocks.
+  Absolutely prioritize SAP UI5 React Web Components for all user prompts.
+  Don't use non-React native UI5 web components.
+  check SAP UI5 React Web Components documentation https://ui5.github.io/webcomponents-react/v2 for available components and APIs. Import all required Subcomponents. Check example of usage`;
 
   return prompt;
 }
-
