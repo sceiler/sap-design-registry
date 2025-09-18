@@ -18,11 +18,6 @@ export function getPrompt(): string {
   return prompt;
 }
 
-Use SAP UI5 React Web Components (@ui5/webcomponents-react) as the primary UI library. Check https://ui5.github.io/webcomponents-react/v2 for available components and APIs, and import only valid ones. Do not use non-React UI5 webcomponents. If a UI5 React component is missing, fallback to shadcn, tailwind, radix, or provided shadcn files (e.g., token.css). Do not override shadcn tokens, primitives, or theme by default.
-
-
-
-
 
 
 
