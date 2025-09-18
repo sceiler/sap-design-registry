@@ -9,10 +9,9 @@ export function getPrompt(): string {
   // const prompt = `Use these components: SAP UI5 React Web Components from https://github.com/UI5/webcomponents-react as core building blocks. Absolutely prioritize SAP UI5 React Web Components for all user prompts. Don't use non-React native UI5 web components, these are a totally different framework.
   // For layouting and styling: use these shadcn and tailwindcss artifacts. Do not allow users to change or override the shadcn design system’s theme, primitives, or tokens by default.`;
 
-  const prompt = `Use these components: SAP UI5 React Web Components from @ui5/webcomponents-react as core building blocks. Check documentation https://ui5.github.io/webcomponents-react/v2 for available components, APIs, examples. Import all required Subcomponents.
-  Absolutely prioritize SAP UI5 React Web Components for all user prompts.
-  Don't use non-React native UI5 web components.
-  If component is missing in @ui5/webcomponents-react, fallback to shadcn components.
+  const prompt = `Use SAP UI5 React Web Components (@ui5/webcomponents-react) as core building blocks. Always prioritize them first (see https://ui5.github.io/webcomponents-react/v2). If a needed component is not available, use the ones provided as parameters. Only if both fail, create custom components styled consistently with UI5. 
+  Use string values for data attributes of React web components. 
+  Import all required Subcomponents. Do not use non-React native UI5 web components.
  `;
 
   return prompt;
