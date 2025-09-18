@@ -3,6 +3,7 @@ import type { ReactElement, ReactNode } from "react";
 // blocks
 import { blank } from "@/app/demo/[name]/blocks/blank";
 import { dashboard } from "@/app/demo/[name]/blocks/dashboard";
+import { sideNavigation } from "@/app/demo/[name]/blocks/side-navigation";
 import { store } from "@/app/demo/[name]/blocks/store";
 import { blockWithTokens } from "@/app/demo/[name]/blocks/blockWithTokens";
 
@@ -54,6 +55,7 @@ export const demos: { [name: string]: Demo } = {
   blank,
   store,
   dashboard,
+  "side-navigation": sideNavigation,
   blockWithTokens,
 
   // components
