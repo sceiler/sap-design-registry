@@ -78,6 +78,21 @@
           "path": "src/v0/globals.css",
           "type": "registry:file",
           "target": "app/globals.css"
+        },
+        {
+          "path": "src/components/message-box.tsx",
+          "type": "registry:component",
+          "target": "components/message-box.tsx"
+        },
+        {
+          "path": "src/components/ui/button.tsx",
+          "type": "registry:file",
+          "target": "components/ui/button.tsx"
+        },
+        {
+          "path": "src/components/ui/alert-dialog.tsx",
+          "type": "registry:file",
+          "target": "components/ui/alert-dialog.tsx"
         }
       ]
     },
@@ -147,15 +162,14 @@
         }
       ]
     },
-        {
+    {
       "name": "blockWithTokens",
       "type": "registry:block",
       "title": "Block with tokens",
       "description": "Block with design tokens only.",
-      "registryDependencies": [
-      ],
+      "registryDependencies": [],
       "files": [
-    {
+        {
           "path": "src/app/tokens.css",
           "type": "registry:file",
           "target": "app/tokens.css"
