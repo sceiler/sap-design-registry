@@ -229,7 +229,7 @@ export const MessageBox = forwardRef<HTMLDivElement, MessageBoxProps>(
             <AlertDialogCancel
               key={action}
               onClick={() => handleAction(action)}
-              className="text-primary shadow-none border-0 font-bold hover:border border-gray-300"
+              className="text-primary shadow-none border border-transparent font-bold hover:border-gray-300"
             >
               {action === "Cancel" ? "Abbrechen" : action}
             </AlertDialogCancel>
@@ -243,7 +243,7 @@ export const MessageBox = forwardRef<HTMLDivElement, MessageBoxProps>(
             className={cn(
               isEmphasized
                 ? "font-bold px-5 py-2"
-                : "bg-transparent text-primary font-bold border-0 h-auto hover:bg-transparent hover:border border-gray-300"
+                : "bg-transparent text-primary font-bold border h-auto hover:bg-transparent border-transparent  hover:border-gray-300"
             )}
           >
             {action}
