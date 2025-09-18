@@ -243,7 +243,7 @@ export const MessageBox = forwardRef<HTMLDivElement, MessageBoxProps>(
             className={cn(
               isEmphasized
                 ? "font-bold px-5 py-2"
-                : "bg-transparent border-0 font-normal h-auto"
+                : "bg-transparent text-primary font-bold border-0 h-auto hover:bg-transparent"
             )}
           >
             {action}
