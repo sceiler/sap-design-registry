@@ -2,90 +2,108 @@
  * SAP Fiori 3 Design Tokens
  * Mapped to standard CSS custom property naming conventions
  */
+@import "@sap-theming/theming-base-content/content/Base/baseLib/sap_horizon/css_variables.css";
 
 /* Font Face Declarations */
 @font-face {
   font-family: 'SAP72';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/72-Regular.woff2') format('woff2');
+  src: url("https://ui5.sap.com/sdk/resources/sap/ui/core/themes/sap_fiori_3/fonts/72-Regular.woff2") format('woff2');
 }
 
 @font-face {
   font-family: 'SAP72';
   font-style: normal;
-  font-weight: 600;
-  src: url('/fonts/72-Semibold.woff2') format('woff2');
+  font-style: bold;
+  font-weight: 800;
+  src: url("https://ui5.sap.com/sdk/resources/sap/ui/core/themes/sap_fiori_3/fonts/72-Bold.woff2") format('woff2');
 }
 
 @font-face {
   font-family: 'SAP72';
   font-style: normal;
-  font-weight: 700;
-  src: url('/fonts/72-Bold.woff2') format('woff2');
+  font-style: bold;
+  font-weight: 800;
+  src: url('https://ui5.sap.com/resources/sap/ui/core/themes/sap_horizon/fonts/72-Black.woff2') format('woff2');
 }
 
 :root {
   /* Base Colors - SAP Fiori 3 Light Theme */
-  --background: #f7f7f7;
-  --foreground: #232629;
+  --background: #fff;
+  --foreground: #131e29;
   --card: #ffffff;
-  --card-foreground: #232629;
+  --card-foreground: #131e29;
   --popover: #ffffff;
-  --popover-foreground: #232629;
-  --primary: #0a6ed1;
+  --popover-foreground: #131e29;
+  --primary: #0070f2;
   --primary-foreground: #ffffff;
-  --secondary: #edeff0;
-  --secondary-foreground: #232629;
+  --secondary: #f5f6f7;
+  --secondary-foreground: #131e29;
   --muted: #f4f4f4;
-  --muted-foreground: #6a6d70;
+  --muted-foreground: rgba(19, 30, 41, 0.6);
+
   --accent: #ebf5fe;
-  --accent-foreground: #0854a0;
-  --destructive: #bb0000;
-  --destructive-foreground: #ffffff;
-  --border: #89919a;
-  --input: #ffffff;
-  --ring: #0854a0;
-  
+  --accent-foreground: var(--sapHighlightColor);
+
+  --destructive: var(--sapField_InvalidColor);
+  --destructive-foreground: var(--sapErrorColor);
+
+  --border: var(--sapButton_Track_BorderColor);
+  /* --input: var(--sapField_Background); */
+  --input: var(--sapField_BorderColor);
+  /* --input: #ccc; */
+  --ring: var(--sapField_Active_BorderColor);
+
   /* Chart Colors - SAP Fiori 3 Palette */
-  --chart-1: #0a6ed1;
-  --chart-2: #107e3e;
-  --chart-3: #df6e0c;
-  --chart-4: #bb0000;
-  --chart-5: #925ace;
-  
+  --chart-1: var(--sapChart_OrderedColor_1);
+  --chart-2: var(--sapChart_OrderedColor_3);
+  --chart-3: var(--sapChart_OrderedColor_2);
+  --chart-4: var(--sapChart_OrderedColor_4);
+  --chart-5: var(--sapChart_OrderedColor_5);
+
   /* Sidebar/Shell Colors */
-  --sidebar: #354a5f;
+  --sidebar: #fff;
   --sidebar-foreground: #ffffff;
+  --sidebar-foreground: var(--sapList_TextColor);
   --sidebar-primary: #d1e8ff;
   --sidebar-primary-foreground: #354a5f;
-  --sidebar-accent: #283848;
-  --sidebar-accent-foreground: #ffffff;
+  --sidebar-accent: var(--hoverBackgroundColor); /* hover color */
+  --sidebar-accent: #eaecee; /* hover color */
+  --sidebar-accent-foreground: var(--sapList_TextColor);
   --sidebar-border: #7996b4;
   --sidebar-ring: #d1e8ff;
-  
+
   /* Typography */
   --font-sans: 'SAP72', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-serif: var(--font-sans);
   --font-mono: '72Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  
+
   /* Border Radius - SAP uses smaller radii */
-  --radius: 0.25rem;
-  
+  --radius: var(--sapButton_BorderCornerRadius);
+
   /* Shadows - SAP Fiori 3 Shadow System */
-  --shadow-2xs: 0 0 0 0.0625rem rgba(0,0,0,0.05);
+  /* --shadow-2xs: 0 0 0 0.0625rem rgba(0,0,0,0.05);
   --shadow-xs: 0 0 0 0.0625rem rgba(0,0,0,0.1), 0 0.125rem 0.5rem 0 rgba(0,0,0,0.1);
   --shadow-sm: 0 0 0 0.0625rem rgba(0,0,0,0.1), 0 0.125rem 0.5rem 0 rgba(0,0,0,0.1);
   --shadow: 0 0 0 0.0625rem rgba(0,0,0,0.1), 0 0.125rem 0.5rem 0 rgba(0,0,0,0.1);
   --shadow-md: 0 0 0 0.0625rem rgba(0,0,0,0.42), 0 0.125rem 0.5rem 0 rgba(0,0,0,0.3);
   --shadow-lg: 0 0 0 0.0625rem rgba(0,0,0,0.42), 0 0.625rem 1.875rem 0 rgba(0,0,0,0.3);
   --shadow-xl: 0 0 0 0.0625rem rgba(0,0,0,0.42), 0 1.25rem 5rem 0 rgba(0,0,0,0.3);
-  --shadow-2xl: 0 0.125rem 0.125rem 0 rgba(0,0,0,0.05), inset 0 -0.0625rem 0 0 #d9d9d9;
-  
+  --shadow-2xl: 0 0.125rem 0.125rem 0 rgba(0,0,0,0.05), inset 0 -0.0625rem 0 0 #d9d9d9; */
+  --shadow-2xs: var(--sapContent_Lite_Shadow);
+  --shadow-xs: var(--sapContent_Lite_Shadow);
+  --shadow-sm: var(--sapContent_Shadow0);
+  --shadow: var(--sapContent_Shadow0);
+  --shadow-md: var(--sapContent_Shadow1);
+  --shadow-lg: var(--sapContent_Shadow2);
+  --shadow-xl: var(--sapContent_Shadow3);
+  --shadow-2xl: var(--sapContent_Shadow3);
+
   /* Typography */
   --tracking-normal: 0em;
   --spacing: 0.25rem;
-  
+
   /* SAP Specific States */
   --success: #107e3e;
   --success-foreground: #ffffff;
@@ -95,13 +113,15 @@
   --information-foreground: #ffffff;
   --neutral: #6a6d70;
   --neutral-foreground: #ffffff;
-  
+
   /* SAP State Backgrounds */
   --success-background: #f1fdf6;
   --warning-background: #fef7f1;
   --error-background: #ffebeb;
   --information-background: #f5faff;
   --neutral-background: #f4f4f4;
+
+  --sapPageHeader_BorderColor: #d9d9d9;
 }
 
 .dark {
@@ -125,14 +145,14 @@
   --border: #8696a9;
   --input: #29313a;
   --ring: #91c8f6;
-  
+
   /* Chart Colors - SAP Fiori 3 Dark Palette */
   --chart-1: #91c8f6;
   --chart-2: #abe2ab;
   --chart-3: #fabd64;
   --chart-4: #ff8888;
   --chart-5: #b995e0;
-  
+
   /* Sidebar/Shell Colors - Dark */
   --sidebar: #354a5f;
   --sidebar-foreground: #fafafa;
@@ -142,25 +162,25 @@
   --sidebar-accent-foreground: #fafafa;
   --sidebar-border: #7996b4;
   --sidebar-ring: #d1e8ff;
-  
+
   /* Typography - Same fonts */
   --font-sans: 'SAP72', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --font-mono: '72Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  
+
   /* Border Radius - Same */
   --radius: 0.25rem;
-  
+
   /* Shadows - SAP Fiori 3 Dark Shadow System */
-  --shadow-2xs: 0 0 0 0.0625rem rgba(255,255,255,0.2);
-  --shadow-xs: 0 0 0 0.0625rem rgba(255,255,255,0.2), 0 0.125rem 0.5rem 0 rgba(0,0,0,0.3);
-  --shadow-sm: 0 0 0 0.0625rem rgba(255,255,255,0.2), 0 0.125rem 0.5rem 0 rgba(0,0,0,0.3);
-  --shadow: 0 0 0 0.0625rem rgba(255,255,255,0.2), 0 0.125rem 0.5rem 0 rgba(0,0,0,0.3);
-  --shadow-md: 0 0 0 0.0625rem rgba(255,255,255,0.5), 0 0.125rem 0.5rem 0 rgba(0,0,0,0.6);
-  --shadow-lg: 0 0 0 0.0625rem rgba(255,255,255,0.5), 0 0.625rem 1.875rem 0 rgba(0,0,0,0.6);
-  --shadow-xl: 0 0 0 0.0625rem rgba(255,255,255,0.5), 0 1.25rem 5rem 0 rgba(0,0,0,0.6);
-  --shadow-2xl: 0 0.125rem 0.125rem 0 rgba(0,0,0,0.2), inset 0 -0.0625rem 0 0 #3a4552;
-  
+  --shadow-2xs: 0 0 0 0.0625rem rgba(255, 255, 255, 0.2);
+  --shadow-xs: 0 0 0 0.0625rem rgba(255, 255, 255, 0.2), 0 0.125rem 0.5rem 0 rgba(0, 0, 0, 0.3);
+  --shadow-sm: 0 0 0 0.0625rem rgba(255, 255, 255, 0.2), 0 0.125rem 0.5rem 0 rgba(0, 0, 0, 0.3);
+  --shadow: 0 0 0 0.0625rem rgba(255, 255, 255, 0.2), 0 0.125rem 0.5rem 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 0 0 0.0625rem rgba(255, 255, 255, 0.5), 0 0.125rem 0.5rem 0 rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 0 0 0.0625rem rgba(255, 255, 255, 0.5), 0 0.625rem 1.875rem 0 rgba(0, 0, 0, 0.6);
+  --shadow-xl: 0 0 0 0.0625rem rgba(255, 255, 255, 0.5), 0 1.25rem 5rem 0 rgba(0, 0, 0, 0.6);
+  --shadow-2xl: 0 0.125rem 0.125rem 0 rgba(0, 0, 0, 0.2), inset 0 -0.0625rem 0 0 #3a4552;
+
   /* SAP Specific States - Dark theme (Official) */
   --success: #abe2ab;
   --success-foreground: #29313a;
@@ -170,7 +190,7 @@
   --information-foreground: #29313a;
   --neutral: #d3d7d9;
   --neutral-foreground: #29313a;
-  
+
   /* SAP State Backgrounds - Dark theme (Official) */
   --success-background: #153c15;
   --warning-background: #2b1a01;

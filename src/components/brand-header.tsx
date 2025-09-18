@@ -22,7 +22,7 @@ export function BrandHeader() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   return (
-    <header className="z-50 w-full border-border border-b bg-background">
+    <header className="z-50 w-full border-border bg-background shellbar">
       <div className="flex h-14 items-center justify-between px-4">
         {/* Left Section: Product Switch + Logo */}
         <div className="flex items-center space-x-2">
@@ -59,7 +59,7 @@ export function BrandHeader() {
               <DropdownMenuItem>View All Applications</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-          
+
           <Link href="/" className="flex items-center">
             <Logo />
           </Link>
@@ -101,8 +101,8 @@ export function BrandHeader() {
           {/* Notifications */}
           <Button variant="ghost" size="sm" className="relative">
             <Bell className="size-4" />
-            <Badge 
-              variant="destructive" 
+            <Badge
+              variant="destructive"
               className="absolute -top-1 -right-1 h-4 w-4 p-0 text-xs"
             >
               3
@@ -156,8 +156,8 @@ export function BrandHeader() {
           </Button>
           <Button variant="ghost" size="sm" className="relative">
             <Bell className="size-4" />
-            <Badge 
-              variant="destructive" 
+            <Badge
+              variant="destructive"
               className="absolute -top-1 -right-1 h-4 w-4 p-0 text-xs"
             >
               3

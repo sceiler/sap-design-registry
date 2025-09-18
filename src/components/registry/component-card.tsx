@@ -92,7 +92,7 @@ export function ComponentCard({
         <CardContent className="flex flex-col items-center justify-center gap-4 rounded-md px-6">
           <div
             className={
-              "h-[800px] w-full overflow-hidden rounded-md border border-border p-4"
+              "h-[800px] w-full overflow-hidden rounded-md border border-border"
             }
           >
             <iframe
