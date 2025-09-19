@@ -124,6 +124,11 @@
           "target": "components/brand-header.tsx"
         },
         {
+          "path": "src/components/brand-sidebar.tsx",
+          "type": "registry:component",
+          "target": "components/brand-sidebar.tsx"
+        },
+        {
           "path": "src/v0/tailwind.config.ts",
           "type": "registry:file",
           "target": "tailwind.config.ts"

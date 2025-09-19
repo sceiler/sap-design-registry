@@ -60,7 +60,7 @@ export function BrandHeader() {
             </DropdownMenuContent>
           </DropdownMenu>
 
-          <Link href="/" className="flex items-center">
+          <Link href="" className="flex items-center">
             <Logo />
           </Link>
         </div>
