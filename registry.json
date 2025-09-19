@@ -163,11 +163,6 @@
           "target": "components/logo.tsx"
         },
         {
-          "path": "src/components/brand-header.tsx",
-          "type": "registry:component",
-          "target": "components/brand-header.tsx"
-        },
-        {
           "path": "src/components/brand-sidebar.tsx",
           "type": "registry:component",
           "target": "components/brand-sidebar.tsx"
