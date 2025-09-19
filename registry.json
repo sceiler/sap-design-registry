@@ -420,11 +420,16 @@
       "description": "A vertically stacked set of interactive headings that each reveal a section of content.",
       "registryDependencies": [
         "accordion",
+        "button",
         "https://sap-design-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
           "path": "src/components/ui/accordion.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/components/ui/button.tsx",
           "type": "registry:ui"
         },
         {
