@@ -102,7 +102,13 @@
       "title": "Dashboard",
       "description": "A dashboard application with your brand themed components",
       "registryDependencies": [
-        "button"
+       "button",
+       "avatar",
+       "badge",
+       "accordion",
+       "select",
+       "tooltip",
+       "tabs"
       ],
       "files": [
         {
