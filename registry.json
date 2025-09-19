@@ -148,7 +148,7 @@
       "registryDependencies": [],
       "files": [
         {
-          "path": "src/v0/shell-layout.tsx",
+          "path": "src/v0/minimal-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         },
@@ -176,11 +176,6 @@
           "path": "src/app/tokens.css",
           "type": "registry:file",
           "target": "app/tokens.css"
-        },
-        {
-          "path": "src/v0/shell-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
         }
       ]
     },
