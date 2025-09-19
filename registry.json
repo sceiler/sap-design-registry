@@ -260,6 +260,7 @@
         "badge",
         "button",
         "sidebar",
+        "https://sap-design-registry.vercel.app/r/brand-header.json",
         "https://sap-design-registry.vercel.app/r/sonner.json",
         "https://sap-design-registry.vercel.app/r/theme.json"
       ],
