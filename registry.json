@@ -102,7 +102,7 @@
       "title": "Dashboard",
       "description": "A dashboard application with your brand themed components",
       "registryDependencies": [
-        "accordion",
+      "accordion",
         "alert",
         "avatar",
         "badge",
@@ -111,7 +111,28 @@
         "calendar",
         "card",
         "chart",
-        "checkbox"
+        "checkbox",
+        "date-picker",
+        "dialog",
+        "dropdown-menu",
+        "input",
+        "menu-bar",
+        "select",
+        "separator",
+        "skeleton",
+        "slider",
+        "sonner",
+        "switch",
+        "table",
+        "tabs",
+        "toggle-group",
+        "tooltip",
+        "radio-group",
+        "progress",
+        "sheet",
+        "drawer",
+        "collapsible",
+        "brand-header"
       ],
       "files": [
         {
