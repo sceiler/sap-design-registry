@@ -1,6 +1,8 @@
 import { type ReactNode } from "react";
 
 import { BrandHeader } from "@/components/brand-header";
+import { BrandSidebar } from "@/components/brand-sidebar";
+import { SidebarProvider } from "@/components/ui/sidebar";
 
 import { cn } from "@/lib/utils";
 
@@ -18,10 +20,15 @@ export default function ShellLayout({
       className={cn("font-sans bg-background text-foreground")}
     >
       <body>
-        <BrandHeader />
-        <main className="mt-16 flex w-full justify-center">
-          <div className="container">{children}</div>
-        </main>
+        <div className="flex h-screen flex-col">
+          <BrandHeader />
+          <SidebarProvider>
+            <BrandSidebar />
+            <main className="flex-1 overflow-auto bg-background">
+              <div className="container mx-auto px-4 py-6">{children}</div>
+            </main>
+          </SidebarProvider>
+        </div>
       </body>
     </html>
   );
