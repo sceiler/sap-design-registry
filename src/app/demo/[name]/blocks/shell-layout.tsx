@@ -12,6 +12,7 @@ export default function ShellLayout({
   return (
     <div className="flex h-screen flex-col">
       <BrandHeader />
+      <p>Test test</p>
       <SidebarProvider>
         <BrandSidebar />
         <main className="flex-1 overflow-auto bg-background">
