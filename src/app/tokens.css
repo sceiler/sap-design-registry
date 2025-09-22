@@ -245,7 +245,7 @@ body {
   color: #1d2d3e;
 }
 
-body:not(:has(.header.shellbar)) [data-slot="sidebar-container"].mt-16 {
+body:not(:has(header.shellbar)) [data-slot="sidebar-container"].mt-16 {
   margin-top: 0;
 }
 
