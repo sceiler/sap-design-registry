@@ -11,6 +11,7 @@ import { blockWithTokens } from "@/app/demo/[name]/blocks/blockWithTokens";
 import { brandHeader } from "@/app/demo/[name]/components/brand-header";
 import { brandSidebar } from "@/app/demo/[name]/components/brand-sidebar";
 import { hero } from "@/app/demo/[name]/components/hero";
+import { iconTabBar } from "@/app/demo/[name]/components/icon-tab-bar";
 import { login } from "@/app/demo/[name]/components/login";
 import { logo } from "@/app/demo/[name]/components/logo";
 import { productGrid } from "@/app/demo/[name]/components/product-grid";
@@ -60,6 +61,7 @@ export const demos: { [name: string]: Demo } = {
 
   // components
   hero,
+  "icon-tab-bar": iconTabBar,
   login,
   promo,
   logo,
