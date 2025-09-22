@@ -99,8 +99,8 @@
     {
       "name": "dashboard",
       "type": "registry:block",
-      "title": "Dashboard",
-      "description": "A dashboard application with your brand themed components",
+      "title": "Shell page",
+      "description": "A template for your application.",
       "registryDependencies": [
        "button",
        "avatar",
