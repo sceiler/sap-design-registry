@@ -15,16 +15,14 @@
 @font-face {
   font-family: 'SAP72';
   font-style: normal;
-  font-style: bold;
   font-weight: 700;
   src: url("https://ui5.sap.com/sdk/resources/sap/ui/core/themes/sap_fiori_3/fonts/72-Bold.woff2") format('woff2');
 }
 
 @font-face {
-  font-family: 'SAP72';
+  font-family: 'SAP72-Bold';
   font-style: normal;
-  font-style: bold;
-  font-weight: 800;
+  font-weight: 400;
   src: url('https://ui5.sap.com/resources/sap/ui/core/themes/sap_horizon/fonts/72-Bold.woff2') format('woff2');
 }
 
@@ -50,12 +48,13 @@
   --secondary-foreground: #131e29;
   --muted: #f4f4f4;
   --muted-foreground: rgba(19, 30, 41, 0.6);
+  --color-border: var(--sapGroup_ContentBorderColor, #d9d9d9);
 
   --accent: #ebf5fe;
   --accent-foreground: var(--sapHighlightColor);
 
-  --destructive: var(--sapField_InvalidColor);
-  --destructive-foreground: var(--sapErrorColor);
+  --destructive: var(--sapButton_Negative_Background);
+  --destructive-foreground: var(--sapButton_Negative_TextColor);
 
   --border: var(--sapButton_Track_BorderColor);
   /* --input: var(--sapField_Background); */
@@ -307,4 +306,19 @@ body:not(:has(header.shellbar)) [data-slot="sidebar-container"].mt-16 {
 
 .border {
   /* border-color: red !important; */
+}
+
+[data-slot="badge"] {
+  --primary: rgb(217, 235, 255);
+  --primary-foreground: rgb(0, 103, 217);
+  --secondary: rgb(234, 236, 238);
+  --secondary-foreground: rgb(70, 70, 70);
+
+  font-family: 'SAP72-Bold';
+  font-style: normal;
+  font-weight: 400;
+}
+
+[data-slot="badge"]:not(.text-primary-foreground):not(.text-secondary-foreground) {
+  --color-border: rgb(217, 217, 217);
 }
