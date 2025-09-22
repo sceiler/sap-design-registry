@@ -28,6 +28,14 @@
   src: url('https://ui5.sap.com/resources/sap/ui/core/themes/sap_horizon/fonts/72-Bold.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: '72-SemiboldDuplex';
+  font-style: normal;
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://cdn.jsdelivr.net/npm/@sap-theming/theming-base-content@11.29.3/content/Base/baseLib/baseTheme/fonts/72-SemiboldDuplex.woff2') format('woff2');
+}
+
 :root {
   /* Base Colors - SAP Fiori 3 Light Theme */
   --background: #fff;
@@ -269,4 +277,34 @@ body:not(:has(header.shellbar)) [data-slot="sidebar-container"].mt-16 {
 
 [data-slot="card-title"] {
   color: var(--sapTile_TitleTextColor);
+}
+
+.rounded-m {
+  border-radius: calc(var(--radius));
+}
+
+[data-slot="button"] {
+  height: calc(var(--spacing) * 9 - 2px);
+  padding-left: 9px;
+  padding-right: 9px;
+  font-family: "72-SemiboldDuplex", "72-SemiboldDuplexfull", "72", "72full";
+}
+[data-slot="button"]:hover {
+  cursor: pointer;
+}
+[data-slot="button"].border {
+  border-color: rgb(188, 195, 202);
+  color: rgb(0, 100, 217);
+}
+
+
+[data-slot="button"].border:hover {
+  cursor: pointer;
+  background: var(--sapButton_Hover_Background, #eaecee);
+  border: 1px solid var(--sapButton_Hover_BorderColor);
+  color: var(--sapButton_Hover_TextColor);
+}
+
+.border {
+  /* border-color: red !important; */
 }

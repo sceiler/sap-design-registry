@@ -23,9 +23,9 @@ export const card = {
           <p>This is the content of a card!</p>
         </CardContent>
 
-        <CardFooter className="flex justify-between">
-          <Button variant="outline">Cancel</Button>
+        <CardFooter className="flex justify-end gap-3">
           <Button>Create</Button>
+          <Button variant="outline">Cancel</Button>
         </CardFooter>
       </Card>
     ),
