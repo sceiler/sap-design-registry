@@ -43,8 +43,8 @@ function IconTabBarTrigger({
     <TabsPrimitive.Trigger
       data-slot="icon-tab-bar-trigger"
       className={cn(
-        // SAP IconTabBar trigger styling - minimal design with bottom border indicator and rounded icon container
-        "relative inline-flex flex-col items-center justify-center gap-1 whitespace-nowrap border-b-2 border-transparent px-4 py-3 font-medium text-sm transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:text-foreground [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 data-[state=active]:after:absolute data-[state=active]:after:bottom-0 data-[state=active]:after:left-1/2 data-[state=active]:after:-translate-x-1/2 data-[state=active]:after:h-0.5 data-[state=active]:after:w-8 data-[state=active]:after:bg-primary data-[state=active]:after:content-['']",
+        // SAP IconTabBar trigger styling - minimal design with bottom border indicator
+        "inline-flex flex-col items-center justify-center gap-1 whitespace-nowrap border-b-2 border-transparent px-4 py-3 font-medium text-sm transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:border-primary data-[state=active]:text-foreground [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0",
         className,
       )}
       {...props}
