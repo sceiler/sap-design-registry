@@ -16,7 +16,7 @@
   font-family: 'SAP72';
   font-style: normal;
   font-style: bold;
-  font-weight: 800;
+  font-weight: 700;
   src: url("https://ui5.sap.com/sdk/resources/sap/ui/core/themes/sap_fiori_3/fonts/72-Bold.woff2") format('woff2');
 }
 
@@ -25,7 +25,7 @@
   font-style: normal;
   font-style: bold;
   font-weight: 800;
-  src: url('https://ui5.sap.com/resources/sap/ui/core/themes/sap_horizon/fonts/72-Black.woff2') format('woff2');
+  src: url('https://ui5.sap.com/resources/sap/ui/core/themes/sap_horizon/fonts/72-Bold.woff2') format('woff2');
 }
 
 :root {
@@ -252,4 +252,21 @@ body:not(:has(header.shellbar)) [data-slot="sidebar-container"].mt-16 {
 [data-slot="sidebar-separator"] {
   --border: #d9d9d9;
   width: calc(100% - 16px)
+}
+
+/* Card */
+.text-card-foreground {
+  border-color: transparent;
+  color: var(--sapGroup_TitleTextColor);
+  background: var(--sapTile_Background);
+  box-shadow: 0 0 .125rem 0 rgba(34,53,72,.2), 0 .125rem .25rem 0 rgba(34,53,72,.2);
+  border-radius: 1rem;
+  border: none;
+  overflow: hidden;
+  font-family: "SAP72";
+  font-size: var(--sapFontSize, 14px);
+}
+
+[data-slot="card-title"] {
+  color: var(--sapTile_TitleTextColor);
 }
