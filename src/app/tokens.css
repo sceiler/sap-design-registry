@@ -219,10 +219,12 @@ body {
   height: calc(var(--spacing) * 13);
 }
 
+/* Shellbar */
 .shellbar {
   box-shadow: inset 0 -.0625rem 0 0 var(--sapPageHeader_BorderColor);
 }
 
+/* Input */
 .input {
   box-shadow: var(--sapField_Shadow);
   background-image: linear-gradient(0deg, rgb(85, 107, 129), rgb(85, 107, 129));
@@ -235,10 +237,19 @@ body {
   background-size: 100% 1px;
 }
 
+/* Sidebar */
 [data-slot="sidebar-container"].mt-16 {
   margin-top: calc(var(--spacing) * 14);
+  box-shadow: rgba(34, 53, 72, 0.2) 0px 0px 2px 0px, rgba(34, 53, 72, 0.2) 0px 2px 4px 0px;
+  --tw-border-style: none;
+  color: #1d2d3e;
 }
 
 body:not(:has(.header.shellbar)) [data-slot="sidebar-container"].mt-16 {
   margin-top: 0;
+}
+
+[data-slot="sidebar-separator"] {
+  --border: #d9d9d9;
+  width: calc(100% - 16px)
 }
