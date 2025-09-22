@@ -47,7 +47,9 @@
       "type": "registry:block",
       "title": "Blank",
       "description": "A blank application with all brand components and code",
-      "registryDependencies": [],
+      "registryDependencies": [
+
+      ],
       "files": [
         {
           "path": "src/v0/minimal-layout.tsx",
@@ -93,6 +95,16 @@
           "path": "src/components/ui/alert-dialog.tsx",
           "type": "registry:file",
           "target": "components/ui/alert-dialog.tsx"
+        },
+        {
+          "path": "src/components/brand-header.tsx",
+          "type": "registry:component",
+          "target": "components/brand-header.tsx"
+        },
+        {
+          "path": "src/components/brand-sidebar.tsx",
+          "type": "registry:component",
+          "target": "components/brand-sidebar.tsx"
         }
       ]
     },
