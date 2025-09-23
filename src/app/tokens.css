@@ -56,10 +56,8 @@
   --destructive: var(--sapButton_Negative_Background);
   --destructive-foreground: var(--sapButton_Negative_TextColor);
 
-  --border: var(--sapButton_Track_BorderColor);
-  /* --input: var(--sapField_Background); */
+  --border: var(--sapGroup_ContentBorderColor, #d9d9d9);
   --input: var(--sapField_BorderColor);
-  /* --input: #ccc; */
   --ring: var(--sapField_Active_BorderColor);
 
   /* Chart Colors - SAP Fiori 3 Palette */
@@ -90,14 +88,6 @@
   --radius: var(--sapButton_BorderCornerRadius);
 
   /* Shadows - SAP Fiori 3 Shadow System */
-  /* --shadow-2xs: 0 0 0 0.0625rem rgba(0,0,0,0.05);
-  --shadow-xs: 0 0 0 0.0625rem rgba(0,0,0,0.1), 0 0.125rem 0.5rem 0 rgba(0,0,0,0.1);
-  --shadow-sm: 0 0 0 0.0625rem rgba(0,0,0,0.1), 0 0.125rem 0.5rem 0 rgba(0,0,0,0.1);
-  --shadow: 0 0 0 0.0625rem rgba(0,0,0,0.1), 0 0.125rem 0.5rem 0 rgba(0,0,0,0.1);
-  --shadow-md: 0 0 0 0.0625rem rgba(0,0,0,0.42), 0 0.125rem 0.5rem 0 rgba(0,0,0,0.3);
-  --shadow-lg: 0 0 0 0.0625rem rgba(0,0,0,0.42), 0 0.625rem 1.875rem 0 rgba(0,0,0,0.3);
-  --shadow-xl: 0 0 0 0.0625rem rgba(0,0,0,0.42), 0 1.25rem 5rem 0 rgba(0,0,0,0.3);
-  --shadow-2xl: 0 0.125rem 0.125rem 0 rgba(0,0,0,0.05), inset 0 -0.0625rem 0 0 #d9d9d9; */
   --shadow-2xs: var(--sapContent_Lite_Shadow);
   --shadow-xs: var(--sapContent_Lite_Shadow);
   --shadow-sm: var(--sapContent_Shadow0);
@@ -294,9 +284,9 @@ body:not(:has(header.shellbar)) [data-slot="sidebar-container"].mt-16 {
 }
 
 .button-default:hover {
-  background: var(--sapButton_Hover_Background, #eaecee);
-  border: 1px solid var(--sapButton_Hover_BorderColor);
-  color: var(--sapButton_Hover_TextColor);
+  background: var(--sapButton_Hover_Background, #eaecee) !important;
+  border: 1px solid var(--sapButton_Hover_BorderColor) !important;
+  color: var(--sapButton_Hover_TextColor) !important;
 }
 
 /* Transparent button */
@@ -308,10 +298,10 @@ body:not(:has(header.shellbar)) [data-slot="sidebar-container"].mt-16 {
 
 /* Transparent */
 .button-transparent:hover {
-  background-color: var(--sapButton_Lite_Hover_Background);
-  border-color: var(--sapButton_Lite_Hover_BorderColor);
-  color: var(--sapButton_Lite_Hover_TextColor);
-  box-shadow: inset 0 0 0 1px var(--sapButton_Hover_BorderColor);
+  background-color: var(--sapButton_Lite_Hover_Background) !important;
+  border-color: var(--sapButton_Lite_Hover_BorderColor) !important;
+  color: var(--sapButton_Lite_Hover_TextColor) !important;
+  box-shadow: inset 0 0 0 1px var(--sapButton_Hover_BorderColor) !important;
 }
 
 /* Negative button */
@@ -322,9 +312,9 @@ body:not(:has(header.shellbar)) [data-slot="sidebar-container"].mt-16 {
 }
 
 .button-negative:hover {
-  background-color: var(--sapButton_Reject_Hover_Background);
-  border-color: var(--sapButton_Reject_Hover_BorderColor);
-  color: var(--sapButton_Reject_Hover_TextColor);
+  background-color: var(--sapButton_Reject_Hover_Background) !important;
+  border-color: var(--sapButton_Reject_Hover_BorderColor) !important;
+  color: var(--sapButton_Reject_Hover_TextColor) !important;
 }
 
 /* Positive button */
@@ -335,9 +325,9 @@ body:not(:has(header.shellbar)) [data-slot="sidebar-container"].mt-16 {
 }
 
 .button-positive:hover {
-  background-color: var(--sapButton_Accept_Hover_Background);
-  border-color: var(--sapButton_Accept_Hover_BorderColor);
-  color: var(--sapButton_Accept_Hover_TextColor);
+  background-color: var(--sapButton_Accept_Hover_Background) !important;
+  border-color: var(--sapButton_Accept_Hover_BorderColor) !important;
+  color: var(--sapButton_Accept_Hover_TextColor) !important;
 }
 
 /* Default button */

@@ -97,6 +97,21 @@
           "target": "components/ui/alert-dialog.tsx"
         },
         {
+          "path": "src/components/ui/card.tsx",
+          "type": "registry:component",
+          "target": "components/ui/card.tsx"
+        },
+        {
+          "path": "src/components/ui/badge.tsx",
+          "type": "registry:component",
+          "target": "components/ui/badge.tsx"
+        },
+        {
+          "path": "src/components/ui/checkbox.tsx",
+          "type": "registry:component",
+          "target": "components/ui/checkbox.tsx"
+        },
+        {
           "path": "src/components/brand-header.tsx",
           "type": "registry:component",
           "target": "components/brand-header.tsx"
