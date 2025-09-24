@@ -47,9 +47,8 @@
       "type": "registry:block",
       "title": "Blank",
       "description": "A blank application with all brand components and code",
-      "registryDependencies": [
-
-      ],
+      "registryDependencies": [],
+      "dependencies": ["@sap-theming/theming-base-content@^11.32.1"],
       "files": [
         {
           "path": "src/v0/minimal-layout.tsx",
@@ -129,14 +128,14 @@
       "title": "Shell page",
       "description": "A template for your application.",
       "registryDependencies": [
-       "button",
-       "avatar",
-       "badge",
-       "accordion",
-       "select",
-       "tooltip",
-       "tabs",
-       "icon-tab-bar"
+        "button",
+        "avatar",
+        "badge",
+        "accordion",
+        "select",
+        "tooltip",
+        "tabs",
+        "icon-tab-bar"
       ],
       "files": [
         {
