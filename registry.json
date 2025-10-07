@@ -134,8 +134,7 @@
         "accordion",
         "select",
         "tooltip",
-        "tabs",
-        "icon-tab-bar"
+        "tabs"
       ],
       "files": [
         {
