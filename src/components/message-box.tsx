@@ -257,7 +257,7 @@ export const MessageBox = forwardRef<HTMLDivElement, MessageBoxProps>(
         <AlertDialogContent
           ref={ref}
           className={cn(
-            "max-w-10/12 min-w-xs border border-gray-300 shadow-lg p-0 gap-0 rounded-[12px]",
+            "max-w-10/12 min-w-xs border border-gray-300 shadow-lg p-0 gap-0 rounded-[12px] bg-white",
             className
           )}
           {...props}
