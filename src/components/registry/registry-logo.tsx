@@ -3,7 +3,7 @@ import Image from "next/image";
 export function RegistryLogo() {
   return (
     <>
-      <div className="flex-shrink-0">
+      <div className="shrink-0">
         <Image 
           src="/SAP_2011_logo.svg" 
           alt="SAP Logo" 
