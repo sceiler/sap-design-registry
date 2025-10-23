@@ -13,7 +13,7 @@ const Toaster = ({ ...props }: ToasterProps) => {
       className="toaster group"
       toastOptions={{
           classNames: {
-              description: "!text-popover-foreground",
+              description: "text-popover-foreground!",
           },
       }}
       style={
